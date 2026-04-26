@@ -1,0 +1,138 @@
+[
+  {
+    "id": "AMP_001",
+    "type": "amplifier",
+    "vendor": "Mini-Circuits",
+    "part": "ZX60-43-S+",
+    "ports": ["RFin", "RFout"],
+    "params": {
+      "freq_min_hz": 50e6, "freq_max_hz": 4000e6,
+      "gain_db": 14.6, "p1db_dbm": 16.5, "nf_db": 4.7,
+      "oip3_dbm": 30, "vswr_in": 1.8, "vswr_out": 1.9
+    }
+  },
+  {
+    "id": "AMP_002",
+    "type": "amplifier",
+    "vendor": "Pasternack",
+    "part": "PE15A1010",
+    "ports": ["RFin", "RFout"],
+    "params": {
+      "freq_min_hz": 10e6, "freq_max_hz": 2000e6,
+      "gain_db": 30.0, "p1db_dbm": 18.0, "nf_db": 2.5,
+      "oip3_dbm": 29.0
+    }
+  },
+  {
+    "id": "ATT_001",
+    "type": "attenuator",
+    "vendor": "Mini-Circuits",
+    "part": "VAT-3+",
+    "ports": ["RFin", "RFout"],
+    "params": {
+      "atten_db": 3.0, "freq_max_hz": 6000e6
+    }
+  },
+  {
+    "id": "MIX_001",
+    "type": "mixer",
+    "vendor": "Mini-Circuits",
+    "part": "ZEM-4300+",
+    "ports": ["RFin", "LOin", "IFout"],
+    "params": {
+      "conv_loss_db": 6.8, "lo_drive_dbm": 7.0,
+      "isolation_lo_rf": 45, "isolation_lo_if": 35
+    }
+  },
+  {
+    "id": "MUL_001",
+    "type": "multiplier",
+    "vendor": "Fairview",
+    "part": "FMMP1002",
+    "ports": ["RFin", "RFout"],
+    "params": {
+      "N": 4, "conv_loss_db": 12.0, "harmonic_rejection_db": 20.0
+    }
+  },
+  {
+    "id": "MIX_002",
+    "type": "mixer",
+    "vendor": "Mini-Circuits",
+    "part": "ZX05-U742MH-S+",
+    "ports": ["RFin", "LOin", "IFout"],
+    "params": {
+      "freq_min_hz": 0.1e6,
+      "freq_max_hz": 7400e6,
+      "conv_loss_db": 8.3,
+      "lo_drive_dbm": 13.0,
+      "ip3_dbm": 20.0,
+      "p1db_dbm": 9.0,
+      "isolation_lo_rf": 25.0,
+      "isolation_lo_if": 23.0
+    }
+  },
+  {
+    "id": "AMP_003",
+    "type": "amplifier",
+    "vendor": "Mini-Circuits",
+    "part": "ZX60-83LN12+",
+    "ports": ["RFin", "RFout"],
+    "params": {
+      "freq_min_hz": 0.5e9,
+      "freq_max_hz": 8e9,
+      "gain_db": 22.1,
+      "p1db_dbm": 12.8,
+      "nf_db": 1.6,
+      "oip3_dbm": 31.5,
+      "v_dc": 12.0,
+      "i_dc_ma": 77.0
+    }
+  },
+  {
+    "id": "FIL_001",
+    "type": "filter",
+    "vendor": "Mini-Circuits",
+    "part": "VLF-5000+",
+    "ports": ["RFin", "RFout"],
+    "params": {
+      "topology": "LPF",
+      "f_cutoff_hz": 5580e6,
+      "order": 7,
+      "IL_db": 1.0
+    }
+  },
+  {
+    "id": "VCO_001",
+    "type": "vco",
+    "vendor": "Mini-Circuits",
+    "part": "ZOS-535+",
+    "ports": ["RFout"],
+    "params": {
+      "f_min_hz": 300e6,
+      "f_max_hz": 525e6,
+      "vtune_v": 12.0,
+      "kvco_hz_per_v": 18e6,
+      "output_dbm": 9.0,
+      "harmonics_dbc": -27.0,
+      "phase_noise_dbchz": -118.0,
+      "v_dc": 12.0,
+      "i_dc_ma": 140.0
+    }
+  },
+  {
+    "id": "MUL_002",
+    "type": "multiplier",
+    "vendor": "Mini-Circuits",
+    "part": "ZX90-2-36-S+",
+    "ports": ["RFin", "RFout"],
+    "params": {
+      "N": 2,
+      "conv_loss_db": 11.0,
+      "harmonic_rejection_db": 18.0,
+      "input_power_min_dbm": 8.0,
+      "input_power_max_dbm": 13.0,
+      "freq_min_hz": 1700e6,
+      "freq_max_hz": 3600e6
+    }
+  }
+]
